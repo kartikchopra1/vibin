@@ -1,0 +1,255 @@
+body{
+  overflow-x: hidden;
+  color: #505962;
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+#main{
+    height:100vh;
+    width:100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 99;
+    transition: all .3s;
+}
+#icon{
+  height: 25px;
+  width: 30px;
+  position: fixed;
+  bottom: 20px;
+  left:50%;
+  transform: translate(-50%,50%);
+  z-index: 999;
+}
+#icon:hover{
+  cursor:pointer;
+}
+#line{
+  height:5px;
+  width:30px;
+  background-color: white;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+}
+#line::before{
+  content:'';
+  height:5px;
+  width:30px;
+  background-color:white;
+  position: absolute;
+  top:-10px;
+}
+#line::after{
+  content:'';
+  height:5px;
+  width:30px;
+  background-color:white;
+  position: absolute;
+  top:10px;
+}
+#menu{
+  height:100px;
+  width:100%;
+  position: absolute;
+  bottom:0;
+  color:white;
+  font-family: fantasy;
+  letter-spacing: 3px;
+}
+#m1{
+  height:100px;
+  width:10%;
+  text-align: center;
+  float: left;
+position: absolute;
+  top: 100%;
+  left:25%;
+}
+#m2{
+  height:100px;
+  width:10%;
+  text-align: center;
+  float: left;
+position: absolute;
+  top: 100%;
+  left:35%;
+}
+#m3{
+  height:100px;
+  width:10%;
+  text-align: center;
+  float: right;
+ position: absolute;
+  top: 100%;
+  right:25%;
+}
+#m4{
+  height:100px;
+  width:10%;
+  text-align: center;
+  float: right;
+  position: absolute;
+  top: 100%;
+  right:35%;
+}
+.video-background .bgvid{
+  position: relative;
+  width: 100%;
+  min-height:100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.caption{
+  position: absolute;
+  top:38%;
+  width: 100%;
+  color: white;
+}
+
+.caption h1{
+font-size: 3rem;
+font-weight:700;
+letter-spacing: .2rem;
+text-shadow: .1rem .1rem .8rem black;
+padding-bottom: 1rem;
+}
+
+.caption h3{
+font-size: 2rem;
+text-shadow: .1rem .1rem .5rem black;
+padding-bottom: 1.6rem;
+}
+.btn-lg{
+border-width: medium;
+border-radius:0;
+font-size: 1.1rem;
+padding: .6rem 1.3rem;
+}
+
+@media (max-width: 768px){
+.caption h1{
+font-size: 1.4rem;
+letter-spacing: .15rem;
+padding-bottom: .5rem;
+}
+
+.caption h3{
+font-size: 1.1rem;
+padding-bottom: 1.2rem;
+}
+.btn-lg{
+font-size: 1rem;
+padding: .5rem 1rem;
+}
+}
+// second page
+#Subscribe{
+  height: 100vh;
+  width:100%;
+}
+
+.container{
+  text-align: center;
+  color:white;
+  padding: 100px 40px;
+
+}
+
+.container p{
+  max-width:600px;
+  margin: 40px auto;
+  font-size:15px;
+  font-weight:300;
+}
+.email-box{
+  height:40px;
+  display:flex;
+  justify-content:center;
+
+}
+.email-box i{
+  background:red;
+  width:40px;
+  line-height:40px;
+}
+.tbox.btn{
+  border:none;
+  padding:0 10px;
+
+}
+.btn{
+  background: red;
+  color:white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tbox{
+  width: 0px;
+  transition: 0.6s;
+}
+.email-box:hover>.tbox,.tbox:focus{
+  width:260px;
+  padding:0 10px;
+}
+
+// socailmedia
+
+#socailmedia{
+  height: 100vh;
+  width: 100%;
+}
+.apper{
+  position: relative;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+}
+.apper ul{
+  list-style: none;
+}
+.apper ul li{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  cursor:pointer;
+  border-radius: 50%;
+  border:5px solid #fff;
+  float: left;
+}
+
+.apper ul li .fa{
+  color:#fff;
+  margin-top:20px;
+}
+.apper ul li:hover:nth-child(1){
+  border:5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+.apper ul li:hover .fa-facebook{
+  color:#3b5998;
+  text-shadow: 0 0 15px #3b5998;
+}
+
+.apper ul li:hover:nth-child(2){
+  border:5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+.apper ul li:hover .fa-twitter{
+  color:#00aced;
+  text-shadow: 0 0 15px #00aced;
+}
+.apper ul li:hover:nth-child(3){
+  border:5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+.apper ul li:hover .fa-instagram{
+  color:#bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+}
